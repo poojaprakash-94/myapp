@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="center"
+        android:text="@string/profile_info"
+        android:textColor="@color/Primary"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="center"
+        android:text="Please provide your name and an optional profile"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:fontFamily="@font/alegreya"
+        android:gravity="center"
+        android:text="Photo"
+        android:textSize="15dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imagev"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/t3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="#D3D3D3"
+        android:scaleX="2"
+        android:src="@drawable/ic_baseline_add_a_photo_24"
+        android:scaleY="4"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imagev"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:theme="@style/EditTextTheme"
+            android:hint="Type your name here"
+            android:textSize="18dp" >
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@+id/editText1"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_alignParentRight="true"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

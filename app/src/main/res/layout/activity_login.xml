@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/alegreya"
+                        android:gravity="center"
+                        android:text="@string/enter_your_phone_number"
+                        android:textColor="@color/Primary"
+                        android:textSize="20dp" />
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="730dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/alegreya"
+                    android:gravity="center"
+                    android:text="Waiting to automatically detect an SMS sent to "
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alegreya"
+
+                        android:text="phone number."
+                        android:textSize="15dp" />
+
+                    />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:fontFamily="@font/alegreya"
+                        android:onClick="ok"
+                        android:text="@string/what_s_my_number"
+
+                        android:textColor="@color/Primary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinnerCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="50dp"
+                        android:backgroundTint="@color/black"
+
+                        android:singleLine="true"
+                        android:spinnerMode="dialog"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="#e2e2e2"
+
+                        android:backgroundTint="@color/black"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l1"
+                    android:layout_margin="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1.45">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editPhoneId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+
+                            android:fontFamily="@font/alegreya"
+                            android:inputType="phone"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:theme="@style/EditTextTheme" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="0.55"
+                        app:hintTextColor="@color/Primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editPhone1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya"
+                            android:hint="Enter Phone Number"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:textColorHint="@color/Primary"
+                            android:textCursorDrawable="@null"
+                            android:theme="@style/EditTextTheme"
+                            android:windowSoftInputMode="adjustPan"
+                            app:hintTextColor="@color/Primary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l2"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="@color/Primary"
+                    android:fontFamily="@font/alegreya"
+
+                    android:gravity="center"
+                    android:text="Continue"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

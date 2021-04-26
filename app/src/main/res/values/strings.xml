@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">myapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search">Search</string>
+    <string name="video">Video</string>
+    <string name="more">More</string>
+    <string name="wall_paper">Wall Paper</string>
+    <string name="mute_notification">Mute Notification</string>
+    <string name="group_media">Group Media</string>
+    <string name="group_icon">Group Icon</string>
+    <string name="call">call</string>
+    <string name="add_shortcut">Add shortcut</string>
+    <string name="export_chat">Export chat</string>
+    <string name="clear_chat">Clear chat</string>
+    <string name="exit_group">Exit group</string>
+    <string name="report">Report</string>
+    <string name="enter_your_phone_number"><b>Enter Your Phone number</b></string>
+    <string name="what_s_my_number">What\'s my number?.</string>
+    <string name="profile_info"><b>Profile Info</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
