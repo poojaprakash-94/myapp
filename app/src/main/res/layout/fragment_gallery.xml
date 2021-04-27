@@ -6,7 +6,27 @@
     android:background="@color/white"
     tools:context=".GalleryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+  
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <Button
+            android:text="Play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlay"
+            android:onClick="playVideo" />
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoView" />
+    </LinearLayout>
+</RelativeLayout>
 
 </FrameLayout>
