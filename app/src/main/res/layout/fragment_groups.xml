@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+       android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".GroupsFragment">
- <LinearLayout
+ <RelativeLayout
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      android:orientation="vertical">
-     <ListView
-         android:id="@+id/mobile_list"
+     <androidx.recyclerview.widget.RecyclerView
          android:layout_width="match_parent"
-         android:layout_height="wrap_content" >
-         <ImageView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginLeft="10dp"/>
-         <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="usern"/>
-     </ListView>
- </LinearLayout>
+         android:layout_height="wrap_content"/>
+
+ </RelativeLayout>
 
 </FrameLayout>
